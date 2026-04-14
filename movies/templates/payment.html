@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .card {
+            width: 400px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #f84464;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #d73754;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>🎬 {{ movie }}</h2>
+
+    <p>✅ Seats Selected Successfully</p>
+
+    <div class="price">
+        Total Amount: ₹{{ display_amount }}
+    </div>
+
+    <button onclick="payNow()">Pay Now</button>
+</div>
+
+<script>
+    function payNow() {
+        window.location.href = "/confirm-booking/?order_id={{ order_id }}";
+    }
+</script>
+
+</body>
+</html>

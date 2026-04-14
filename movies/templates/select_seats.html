@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Seats</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .screen {
+            background: #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .seat-container {
+            display: grid;
+            grid-template-columns: repeat(5, 60px);
+            gap: 10px;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .seat {
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #90ee90;
+            font-weight: bold;
+        }
+
+        .seat.selected {
+            background-color: orange;
+        }
+
+        .seat.locked {
+            background-color: red;
+            cursor: not-allowed;
+        }
+
+        .seat.booked {
+            background-color: black;
+            color: white;
+            cursor: not-allowed;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #timer {
+            font-size: 18px;
+            color: red;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>🎟 Select Your Seats - {{ movie.title }}</h2>
+
+<div class="screen">SCREEN</div>
+
+<!-- Legend -->
+<div>
+    <span style="background:lightgreen; padding:5px;">Available</span>
+    <span style="background:orange; padding:5px;">Selected</span>
+    <span style="background:red; padding:5px;">Locked</span>
+    <span style="background:black; color:white; padding:5px;">Booked</span>
+</div>
+
+<div class="seat-container" id="seats"></div>
+
+<button onclick="bookSeats()">Lock Seats</button>
+<button onclick="goToPayment()">Proceed to Payment</button>
+
+<div id="timer"></div>
+<div id="message"></div>
+
+<script>
+    const movie_id = new URLSearchParams(window.location.search).get("movie_id");
+    const movie_name = "{{ movie.title }}";
+
+    let selectedSeats = [];
+    let timerInterval;
+
+    const seatContainer = document.getElementById("seats");
+
+    for (let i = 1; i <= 20; i++) {
+        let seat = document.createElement("div");
+        seat.classList.add("seat");
+        seat.innerText = "A" + i;
+
+        seat.onclick = () => {
+            if (seat.classList.contains("locked") || seat.classList.contains("booked")) return;
+
+            seat.classList.toggle("selected");
+
+            const seatNo = seat.innerText;
+
+            if (selectedSeats.includes(seatNo)) {
+                selectedSeats = selectedSeats.filter(s => s !== seatNo);
+            } else {
+                selectedSeats.push(seatNo);
+            }
+
+            console.log("Selected:", selectedSeats);
+        };
+
+        seatContainer.appendChild(seat);
+    }
+
+    // Lock Seats
+    function bookSeats() {
+        if (selectedSeats.length === 0) {
+            document.getElementById("message").innerText = "⚠ Select seats first!";
+            return;
+        }
+
+        let url = `/select-seats/?movie_id=${movie_id}`;
+        selectedSeats.forEach(s => url += `&seats=${s}`);
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+
+            document.querySelectorAll(".seat").forEach(seat => {
+                let seatNo = seat.innerText;
+
+                if (data.locked.includes(seatNo)) {
+                    seat.classList.remove("selected");
+                    seat.classList.add("locked");
+                }
+
+                if (data.failed.includes(seatNo)) {
+                    seat.classList.add("booked");
+                }
+            });
+
+            let msg = "";
+
+            if (data.locked.length > 0) {
+                msg += "✅ Locked: " + data.locked.join(", ");
+            }
+
+            if (data.failed.length > 0) {
+                msg += " ❌ Already Booked: " + data.failed.join(", ");
+            }
+
+            document.getElementById("message").innerText = msg;
+
+            
+            startTimer();
+        });
+    }
+
+    // Go to Payment (FINAL FIX)
+    function goToPayment() {
+        let lockedSeats = [];
+
+        document.querySelectorAll(".seat.locked").forEach(seat => {
+            lockedSeats.push(seat.innerText);
+        });
+
+        if (lockedSeats.length === 0) {
+            alert("⚠ Please lock seats first!");
+            return;
+        }
+
+        let url = `/create-order/?movie=${movie_name}`;
+
+        lockedSeats.forEach(seat => {
+            url += `&seats=${seat}`;
+        });
+
+        window.location.href = url;
+    }
+
+    // Timer
+    function startTimer() {
+        let time = 120;
+
+        clearInterval(timerInterval);
+
+        timerInterval = setInterval(() => {
+            let minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+
+            document.getElementById("timer").innerText =
+                `Time left: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+            time--;
+
+            if (time < 0) {
+                clearInterval(timerInterval);
+                alert("⏳ Time expired!");
+                location.reload();
+            }
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>

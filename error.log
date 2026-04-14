@@ -1,0 +1,1037 @@
+Internal Server Error: /pay/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 91, in create_order
+    return render(request, "payment.html", {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: payment.html
+"GET /pay/?movie=Pathaan HTTP/1.1" 500 84392
+Internal Server Error: /pay/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 90, in create_order
+    return render(request, "payment.html", {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: payment.html
+"GET /pay/?movie=Pathaan HTTP/1.1" 500 84392
+Internal Server Error: /pay/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1419, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\requests\adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 1419, in getresponse
+    response.begin()
+  File "C:\Program Files\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 78, in create_order
+    order = client.order.create({
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\razorpay\resources\order.py", line 71, in create
+    return self.post_url(url, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\razorpay\resources\base.py", line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\razorpay\client.py", line 252, in post
+    return self.request('post', path, data=data, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\razorpay\client.py", line 182, in request
+    response = getattr(self.session, method)(url, auth=auth_to_use,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\requests\sessions.py", line 640, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\requests\sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\requests\sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\requests\adapters.py", line 660, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+"GET /pay/?movie=Pathaan HTTP/1.1" 500 200743
+"GET / HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /create-order/?movie=Timepass&seats=A14&seats=A19&seats=A20 HTTP/1.1" 500 155662
+Internal Server Error: /test-email/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 264, in test_email
+    send_mail(
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\utils\deprecation.py", line 268, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\__init__.py", line 108, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\message.py", line 358, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 138, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 154, in _send
+    self.connection.sendmail(from_email, recipients, message.as_bytes())
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 876, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/accounts/troubleshooter/2402620. d2e1a72fcca58-82f0df08c09sm10114644b3a.9 - gsmtp', 'vidhyaparadkar21@gmail.com')
+"GET /test-email/ HTTP/1.1" 500 97569
+Internal Server Error: /test-email/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 264, in test_email
+    send_mail(
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\utils\deprecation.py", line 268, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\__init__.py", line 108, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\message.py", line 358, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 138, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 154, in _send
+    self.connection.sendmail(from_email, recipients, message.as_bytes())
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 876, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/accounts/troubleshooter/2402620. d9443c01a7336-2b2d4e0f909sm136423055ad.35 - gsmtp', 'vidhyaparadkar21@gmail.com')
+"GET /test-email/ HTTP/1.1" 500 97417
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 359, in admin_dashboard
+    return render(request, "admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 94690
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 365, in admin_dashboard
+    return render(request, "movies/admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: movies/admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 95029
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 365, in admin_dashboard
+    return render(request, "movies/admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: movies/admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 95029
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 365, in admin_dashboard
+    return render(request, "movies/admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: movies/admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 93432
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 365, in admin_dashboard
+    return render(request, "movies/admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: movies/admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 93432
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 365, in admin_dashboard
+    return render(request, "movies/admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: movies/admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 93432
+Internal Server Error: /admin-dashboard/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 365, in admin_dashboard
+    return render(request, "movies/admin_dashboard.html", data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: movies/admin_dashboard.html
+"GET /admin-dashboard/ HTTP/1.1" 500 93432
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=1&seats=A17&seats=A7 HTTP/1.1" 500 140320
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=1&seats=A17&seats=A7 HTTP/1.1" 500 140320
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=1&seats=A17&seats=A7 HTTP/1.1" 500 140320
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=1&seats=A17&seats=A7 HTTP/1.1" 500 140320
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=1&seats=A17&seats=A7&seats=A12 HTTP/1.1" 500 140422
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=5&seats=A12&seats=A17&seats=A16&seats=A11 HTTP/1.1" 500 140521
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=5&seats=A12&seats=A17&seats=A16&seats=A11 HTTP/1.1" 500 140521
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=5&seats=A12&seats=A17&seats=A16&seats=A11 HTTP/1.1" 500 140521
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=5&seats=A12&seats=A17&seats=A16&seats=A11 HTTP/1.1" 500 140521
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 103, in select_seats
+    ).first()
+      ^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 1145, in first
+    for obj in queryset[:1]:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=5&seats=A12&seats=A17&seats=A16&seats=A11 HTTP/1.1" 500 140521
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 59, in movie_list
+    release_expired_seats()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 333, in release_expired_seats
+    for res in expired:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET / HTTP/1.1" 500 138296
+Internal Server Error: /select-seats/
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: movies_reservation.payment_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 98, in select_seats
+    release_expired_seats()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\bookmyshow\movies\views.py", line 373, in release_expired_seats
+    for res in expired_reservations:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 390, in __iter__
+    self._fetch_all()
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\bookmyshow\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: movies_reservation.payment_id
+"GET /select-seats/?movie_id=2 HTTP/1.1" 500 137263
