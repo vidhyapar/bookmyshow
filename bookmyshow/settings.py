@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }py
+    }
 }
 DATABASES['default']=dj_database_url.parse('postgresql://bookmyshow_chvl_user:CCwzVwosF403GHHBM6bCsxi2DmVwMkGz@dpg-d7f3uisvikkc73dgcbs0-a.oregon-postgres.render.com/bookmyshow_chvl')
 
