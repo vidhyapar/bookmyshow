@@ -7,6 +7,7 @@ import logging
 import razorpay
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import get_object_or_404
 
 from django.utils import timezone
 from datetime import timedelta
@@ -150,14 +151,14 @@ def select_seats(request):
 
 # CREATE ORDER
 def create_order(request):
-    movie_name = request.GET.get('movie')
+    movie_id = request.GET.get('movie_id')
     seat_numbers = request.GET.getlist('seats')
 
-    try:
-        movie = Movie.objects.get(title=movie_name)
-    except:
-        return HttpResponse("Movie not found")
+    if not movie_id:
+        return HttpResponse("Movie ID missing")
 
+    movie = get_object_or_404(Movie, id=movie_id)
+    
     if not request.session.session_key:
         request.session.create()
 
