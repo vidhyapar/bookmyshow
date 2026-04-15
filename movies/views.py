@@ -56,9 +56,7 @@ def movie_list(request):
     paginator = Paginator(movies, 8)
     page_obj = paginator.get_page(request.GET.get('page'))
 
-    # -----------------------------
-    # FILTER COUNTS (FIXED LOGIC)
-    # -----------------------------
+   
 
     base = Movie.objects.all()
 

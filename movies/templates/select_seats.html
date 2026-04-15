@@ -138,6 +138,7 @@
         }
 
         let url = `/select-seats/?movie_id=${movie_id}`;
+        
         selectedSeats.forEach(s => url += `&seats=${s}`);
 
         fetch(url)
@@ -187,8 +188,7 @@
             return;
         }
 
-        let url = `/create-order/?movie=${movie_name}`;
-
+        let url = `/create-order/?movie_id=${movie_id}`;
         lockedSeats.forEach(seat => {
             url += `&seats=${seat}`;
         });
